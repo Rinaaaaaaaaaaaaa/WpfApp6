@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TextBox Example" Height="800" Width="700">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="TextBox1" TextChanged="TextBox_TextChanged" Margin="10" Height="100" />
+            <Button x:Name="ClearButton" Content="Очистить" Click="ClearButton_Click" Height="25" Width="106" />
+            <TextBox x:Name="TextBox2" TextChanged="TextBox_TextChanged" Margin="10" Height="100" />
+            <Button x:Name="OpenButton" Content="Открыть" Click="OpenButton_Click" Width="102" Height="26" />
+            <Button x:Name="CloseButton" Content="Закрыть" Click="CloseButton_Click" Margin="10" Width="108" Height="26" />
+            <ComboBox x:Name="FontStyleComboBox" SelectionChanged="FontStyleComboBox_SelectionChanged" Margin="10">
+                <ComboBoxItem Content="Arial" />
+                <ComboBoxItem Content="Courier New" />
+                <ComboBoxItem Content="Times New Roman" />
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+</Window>
